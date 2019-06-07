@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <% include partials/inner_head.html %>
+  </head>
+  <body>
+    <% include partials/navbar.html %>
+    <% include partials/board.html %>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l4">
+              <div class="customcol">
+                <div id="avatar-container" class="container">
+                  <div class="row">
+                      <center>
+                        <div id="profile_img"></div>
+                        <img id="profile_add" class="waves-effect waves-light modal-trigger" href="#modal1" src="/img/add.png">
+                        
+                      </center>
+                      
+                      <div id="info">
+                        <center><strong><div id="username_profilepage">Username</div></strong><br></center>
+                        <hr>
+                        <strong>Detalles:</strong><br>
+                        <strong>Cumpleaños:</strong><br>
+                        <strong>Web:</strong><br>
+                      </div>
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+            <div class="col s12 l8">
+              <div class=customcol>
+                 <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s4"><a href="#t2">Leídos</a></li>
+                      <li class="tab col s4"><a href="#t3">Favoritos</a></li>
+                      <li class="tab col s4"><a href="#t4">Pendiente</a></li>
+                    </ul>
+                  </div>
+                  <div id="t2" class="col s12"><div id="leidos_perfil"></div></div>
+                  <div id="t3" class="col s12"><div id="fav_perfil"></div></div>
+                  <div id="t4" class="col s12"><div id="pend_perfil"></div></div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MODAL -->
+    
+    <div id="modal1" class="modal">
+      <br>
+      <div role="window" class="modal-content">
+        <div class="row">
+          <div class="input-field col l12">
+            <input id="avatar" class="input_avatar" aria-live="polite" type="text" placeholder="Url externo"></input>
+            <label for="avatar" data-error="wrong" data-success="right">Enlace imagen (.jpg, .png, .gif)</label>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="modal-footer">
+        <a href="#!" id="submit_avatar" class="modal-close waves-effect waves-green btn-flat">Actualizar</a>
+      </div>
+    </div>
+      
+    
+    
+    <% include partials/footer.html %>
+    <% include partials/scripts.html %>
+  </body>
+</html>

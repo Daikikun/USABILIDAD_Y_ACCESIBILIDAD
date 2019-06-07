@@ -1,0 +1,108 @@
+<!-- Dropdown Structure -->
+<ul role="menu" aria-expanded="false" id="dropdown1" class="dropdown-content pulled">
+    <!-- contenido -->
+    <li role="menuitem"><a href="./perfil"><i class="prefix far fa-user"></i>Ver Perfil</a></li>
+    <li role="menuitem"><a href="./circles"><i class="prefix fas fa-users"></i>Círculos</a></li>
+    <li role="menuitem"><a href="./config"><i class="prefix fas fa-cog"></i>Configuración</a></li>
+    <li class="divider"></li>
+    <li role="menuitem"><a id="logout" href="./"><i class="prefix fas fa-power-off"></i> Cerrar sesión</a></li>
+</ul>
+
+<ul role="window" id="dropdown2" class="dropdown-content pulled2">
+    <!-- contenido -->
+    <li><div class="notification-header">Notificaciones</div></li>
+    <li>
+        <div id="notify-list">
+            <div class="alert">
+                No tiene mensajes nuevos
+            </div>
+        </div>
+    </li>
+    <li><div><a class="notification-header" href="#!">Ver todas</a></div></li>
+</ul>
+
+
+
+<nav id="nav1">
+    <div class="nav-wrapper">
+    <!--<a href="#!" class="brand-logo">Logo</a>-->
+    <ul role="toolbar" class="left navilist"><!--hide-on-med-and-down-->
+        <li id="btn1"><img id="logo_tab" src="/img/logo_trans.png"></img></li>
+        <li id="btn1"><a href="./home">Inicio</a></li>
+        <li id="btn2"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Notificaciones</a></li>
+        <li id="btn4"><a href="./biblioteca">Biblioteca</a></li>
+        <li id="btn5"><a href="./comunidad">Comunidad</a></li>
+        <!-- Search form -->
+
+        <li id="btn7">
+            <input id="icon_prefix" class="mainsearcher" type="text" placeholder="Buscar" aria-label="Buscar"></input>
+        </li>
+        <li><i class="material-icons sufix pulled">search</i></li>
+
+        <!-- Icons
+        <li><a href="./"><i class="material-icons"><item>notifications</item></i></a></li>
+        <li><a href="./"><i class="material-icons"><item>forum</item></i></a></li>
+        <li><a href="./"><i class="material-icons"><item>email</item></i></a></li>
+        <li><a href="./"><i class="material-icons"><item>group</item></i></a></li>-->
+    </ul>
+    <ul class="right"> <!--hide-on-med-and-down-->
+        <!-- Dropdown Trigger -->
+        <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                <!--<img class="circle profile" src="./img/usericon.png">-->
+                <div class="circle profile" id="avatar_in_navbar"></div>
+                <div id="username"></div>
+                <i class="material-icons right">arrow_drop_down</i>
+            </a>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<nav id="nav2">
+    <div class="row">
+        <div class="col s6"><div id="username2"></div></div>
+        <div class="col s6"><i id="expand_navbar" class="material-icons">arrow_drop_down_circle</i></div>
+    </div>
+</nav>
+
+<div id="nav2_expanded">
+    <br>
+    <div id="close_navbar">
+        <center><i class="fas fa-times"></i></center>
+    </div>
+    
+    <div class="row">
+            <center>
+                <div class="btn_mininab nf" id="btn1"><a class="nf" href="./home">Inicio</a></div>
+                <div class="btn_mininab nf" id="btn4"><a class="nf" href="./biblioteca">Biblioteca</a></div>
+                <div class="btn_mininab nf" id="btn5"><a class="nf" href="./comunidad">Comunidad</a></div>
+                
+            </center>
+                
+                <!-- Search form -->
+            
+                
+                <center>
+                    <input id="icon_prefix" class="mainsearcher nf" type="text" placeholder="Buscar" aria-label="Buscar"></input>
+                </center>
+  
+    </div>
+    
+    
+    <div class="row">
+        <div class="foot_of_nav">
+            <div><a class="nf" href="./perfil">Ver Perfil</a></div>
+            <div><a class="nf" href="./circles">Círculos</a></div>
+            <div><a class="nf" href="./config">Configuración</a></div>
+            <div><a class="nf" id="logout" href="./"> Cerrar sesión</a></div>
+        </div>
+            
+    </div>
+    
+   
+    
+</div>
+

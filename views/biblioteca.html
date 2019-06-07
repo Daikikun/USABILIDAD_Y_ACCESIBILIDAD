@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <% include partials/inner_head.html %>
+  </head>
+  <body>
+    <% include partials/navbar.html %>
+    <% include partials/board.html %>
+
+    <div class="container">
+        <div class="row">
+          <div class="col l12">
+           <div class="customcol"><h2><%= title %></h2><br>
+           
+           <!-- Modal Trigger -->
+          <center>
+            <button type="submit" class="waves-effect waves-light btn modal-trigger" href="#modal1">Añadir libro</button>
+          </center>
+          <br><br>
+
+          <!-- lista libros por imagen -->
+          <div id="book_listed"><center><img src="/img/cargando.gif"></center></div>
+          
+          
+          
+          <!-- Tabla libros -->
+          <div id="bibli">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Autor</th>
+                  <th>Editorial</th>
+                  <th>Género</th>
+                </tr>
+              </thead>
+            <tbody id="inner_bibli">
+            </tbody>
+            </table>
+          </div>
+
+          </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div role="window" class="modal-content">
+          <h4>Registra tu libro</h4>
+          <form class="container" id="mi_formulario">
+            <div class="row">
+              <div id="warning-errors"></div><br>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Nombre" id="name" type="text" class="validate" required="" aria-required="true">
+                <label for="name" data-error="wrong" data-success="right">Nombre</label>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Editorial" id="editorial" type="text" class="validate" required="" aria-required="true">
+                <label for="editorial" data-error="wrong" data-success="right">Editorial</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Autor" id="autor" type="text" class="validate" required="" aria-required="true">
+                <label for="autor" data-error="wrong" data-success="right">Autor</label>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Género" id="genero" type="text" class="validate" required="" aria-required="true">
+                <label for="genero" data-error="wrong" data-success="right">Género</label>
+              </div>
+            </div> <!--                                                                          arya -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Enlace imagen" id="url_bk" type="text" class="validate" required="" aria-required="true">
+                <label for="url_bk" data-error="wrong" data-success="right">Enlace externo</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" id="register" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+          <!--<a href="#!" id="submit_book" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>-->
+        </div>
+      </div>
+
+    <% include partials/footer.html %>
+    <% include partials/scripts.html %>
+  </body>
+</html>

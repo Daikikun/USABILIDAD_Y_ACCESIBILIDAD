@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <% include partials/inner_head.html %>
+  </head>
+  <body>
+    <% include partials/navbar.html %>
+    <% include partials/board.html %>
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col l3">
+          <div class="customcol">
+            
+          <!-- aria-labelledby -->
+          <h2 id="2ndtit">El club</h2>  
+          <p id="desc">En nuestro club podrá encontrar ávidos lectores de todo el mundo, con los que podrá charlar
+          sobre sus novelas favoritas, discutir sobre las tramas, los argumentos y los personajes que más le gusten,
+          así como formar círculos de lectura con sus compañeros lectores.</p>
+            <center>
+              <img src="/img/ink.png" class="club" alt="nuestro club de lectura" aria-labelledby="2ndtit" aria-describedby="desc" />
+            </center>
+            
+            
+          </div>
+          
+        </div>
+        <div class="col l6">
+           <div class="customcol">
+            
+            <h4><strong>Bienvenido, <div id="username_profilepage" class="inline"></div></strong></h4>
+            <li class="divider"></li><br>
+            <div id="activity">
+              <div class="container">
+                <div class="row activ">
+                  
+                  
+                  
+                  <div class="col s2 activity-pic"><img src="/img/1.png" class="icon"></div>
+                  <div class="col s10"><div id="activity-cont"  tabindex="0">A <strong>María</strong> le gusta <i>'El temor de un hombre sabio'</i>
+                  
+                  <br><div id="test"></div>
+                  
+                  
+                  </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2 activity-pic"><img src="/img/2.png" class="icon"></div>
+                  <div class="col s10">
+                    <div id="activity-cont"  tabindex="0">A <strong>Juan</strong> le gusta tu comentario
+                      <div id="activity-quote"><i>"El libro me parece vacío y carente de sentido"</i></div>
+                      <!--<img src"/img/like.dislike.png" class="like">-->
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2 activity-pic"><img src="/img/3.png" class="icon"></div>
+                  <div class="col s10"><div id="activity-cont"  tabindex="0"><strong>Hulio</strong> ha comentado en <i>'Crepúsculo'</i>
+                      <div id="activity-quote"><i>"Demasiado ñoño"</i></div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+            
+          </div>
+          
+          
+          
+        </div>
+        <div class="col l3">
+          <div class="customcol">
+            
+            <h5><strong>Amigos</strong></h5>
+            <li class="divider"></li><br>
+            <div id="list-friends">
+            </div>
+            
+            <h5><strong>Círculos</strong></h5>
+            <li class="divider"></li><br>
+            <div id="list-circles">
+            </div>
+                        
+            
+          </div>
+        </div>
+        </div>
+      
+      
+      
+    </div>
+    
+    
+    <% include partials/footer.html %>
+    <% include partials/scripts.html %>
+  </body>
+</html>
+
+<!-- 
+tab index
+arialive en formulario 
+-->

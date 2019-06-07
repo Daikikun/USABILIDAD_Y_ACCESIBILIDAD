@@ -1,0 +1,14 @@
+/* Vínculación a fuentes */
+
+@font-face {
+    font-family: 'Francois One';
+    src: 
+        url(https://fonts.gstatic.com/s/francoisone/v11/_Xmr-H4zszafZw3A-KPSZut9wQiR.woff2) format('woff2');
+ }
+  
+@font-face {
+    font-family: pistili;
+    src: 
+        local('pistili'),
+        url(/font/pistili.otf) format('otf');
+}

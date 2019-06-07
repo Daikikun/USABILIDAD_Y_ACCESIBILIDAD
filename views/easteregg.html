@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Easter Egg</title>
+    <% include partials/inner_head.html %>
+    <link rel="stylesheet" href="/css/large.egg.css">
+    
+    
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+  </head>
+  <body>
+     <h1>Tabla descriptiva</h1>
+    <table id="infotablajs">
+      <thead>
+          <tr>
+              <th>Función</th>
+              <th>Descripción</th>
+          </tr>
+      </thead>
+      <tbody>
+             <tr><td>document.getElementById(id)</td><td> Devuelve el elemento que tiene el atributo ID con el valor especificado.</td></tr>
+             <tr> <td>document.getElementsByTagName(name)</td><td> Devuelve una colección de todos los elementos en el documento con el nombre de etiqueta especificado, como un objeto NodeList.</td></tr>
+             <tr><td>document.getElementsByClassName(name)</td><td> Devuelve una colección de todos los elementos en el documento con el nombre de clase especificado, como un objeto NodeList.</td></tr>
+             <tr><td>element.innerHTML = new html content</td><td> La propiedad innerHTML establece o devuelve el contenido HTML (HTML interno) de un elemento.</td> </tr>
+              
+              <!-- /// -->
+              
+            <tr><td>element.attribute = new value</td><td>Retorna una colección "viva" cuyos nodos son todos los atributos registrados en el nodo especificado.</td></tr>
+            <tr><td>element.style.property = new style</td><td>Se utiliza para obtener y establecer el estilo en línea de un elemento. </td> </tr>
+            <tr><td>element.setAttribute(attribute, value)</td><td>Agrega el atributo especificado a un elemento y le da el valor especificado.</td> </tr>
+            <tr><td>document.createElement(element)</td><td>Crea un elemento HTML especificado por su etiqueta name</td> </tr>
+            <tr><td>document.removeChild(element)</td><td>Elimina un nodo hijo del DOM y puede devolver el nodo eliminado.</td> </tr>
+              
+              
+              <!-- /// -->
+              
+              <tr><td>document.appendChild(element)</td><td> Agrega un objeto en una lista </td> </tr>
+              <tr><td>document.replaceChild(new, old)</td><td> Reemplaza un nodo de texto en un elemento de lista < li > con un nuevo nodo de texto</td> </tr>
+              <tr><td>document.write(text)</td><td> Escribe expresiones HTML o código JavaScript en un documento. </td> </tr>
+              <tr><td>document.getElementById(id).onclick = function(){code}</td><td> Devuelve el elemento que tiene el atributo ID con el valor especificado. </td> </tr>
+      </tbody>
+      
+    </table>
+    
+    <h1>Esquema</h1>
+    
+    
+    <img src="./img/schema.png"/>
+    
+    
+    <h1>Cambio de moneda</h1>
+      
+      
+  <div class="row">
+  <div class="col-xs-12"> <!--Móviles-->
+    <form name="formulario" id="formulario">
+            <span class="label label-warning">Cantidad Inicial</span>
+            <input class="form-control" type="text" name="cantidad" id="cantidad" onChange="calcular()">
+            <br>
+
+            <span class="label label-warning">Tipo de Cambio</span>
+            
+            <select class="form-control" name="opciones" id="opciones" onChange="calcular()">
+              <option value="dol_lib">Dólares a Libras</option>
+              <option value="lib_dol">Libras A Dólares</option>
+              <option value="eu_lib">Euros a Libras</option>
+              <option value="lib_eu">Libras a Euros</option>
+              <option value="eu_dol">Euros a Dólares</option>
+              <option value="dol_eu">Dólares a Euros</option>
+            </select>
+            
+            <br>
+            <span class="label label-success">Resultado - Cambio</span>
+            <input class="form-control" type="text" name="resultado" readonly="readonly">
+            <br>
+
+            <button type="button" class="btn btn-info" onclick="limpiar()">LIMPIAR</button>
+    </form>
+  </div>
+  <div class="col-sm-12"> <!--Tablet--> </div>
+  <div class="col-md-12"> <!--PC-->     </div>
+  
+  <!-- ////////////////////////////////////////////////////////////////////////////////////// -->    
+      
+    <h1>Compra de productos</h1>
+    <div class="formu">
+      <input id="elto_compra" type="text" placeholder="Elemento" ></input>
+    <input id="precio_compra" type="number" placeholder="precio" ></input>
+    <button class="btn" id="add_compra" onclick="add_item()">agregar</button><br><br>
+    </div>
+    
+    <table >
+      <thead>
+        <tr><th>elemento</th><th>precio</th></tr>
+      </thead>
+      <tbody id="previa_compra">
+      </tbody>
+      <tr><td><b>Total:</b></td><td><span id="total_compra"></span>  €</div></td></tr>
+    </table>
+    <br>
+    
+    <h1>Contador de etiquetas: p, a y ul</h1>
+    <a>enlace 1</a><br>
+    <a>enlace 2</a>
+    <hr>
+    <p>parrafo 1</p>
+    <p>parrafo 2</p>
+    <p>parrafo 3</p>
+    <hr>
+    <ul>lista 1</ul>
+    <ul>lista 2</ul>
+    <ul>lista 3</ul>
+    <ul>lista 4</ul>
+    <ul>lista 5</ul>
+    <ul>lista 6</ul>
+    
+    
+    <!-- SCRIPTS -->
+    <% include partials/scripts.html %>
+    <script src="./js/egg/counter.js"></script>
+    <script src="./js/egg/change.js"></script>
+    <script src="./js/egg/shopping.js"></script>
+    
+  </body>
+</html>

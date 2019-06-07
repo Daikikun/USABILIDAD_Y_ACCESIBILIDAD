@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <% include partials/inner_head.html %>
+  </head>
+  <body id="login_bg">
+    <div class="container">
+      
+      <div class="row">
+          <center><div class="main_tit_index"><h1>INKOFFEE</h1></div></center>
+      </div>
+        
+        
+      <div class="row">
+
+        <div class="col s4 offset-s4" id="login">
+          <div class="inner-login">
+            <form id="login_user">
+              <input id="user_input" class="input_login" aria-live="polite" type="text" placeholder="Usuario"></input>
+              <input id="pass_input" class="input_login" type="password" placeholder="Contraseña"></input>
+            </form>
+            <button id="login_input" class="btn"><a id="login_success">Iniciar Sesión</a></button>
+            <button type="button" class="btn modal-trigger" href="#modal1">Registrarse</button>
+          </div>
+        </div>
+
+<div id="modal1" class="modal">
+  <div role="window" class="modal-content">
+
+
+    <form id="register_form">
+      <div class="container">
+
+        <div class="row">
+          <div id="warning-errors"></div><br>
+        </div>
+
+
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="User/Alias" id="name" type="text" class="validate" required="" aria-required="true">
+            <label for="name" data-error="wrong" data-success="right">Usuario*</label>
+          </div>
+          <div class="input-field col s6">
+            <input placeholder="Nombre y Apellido/s" id="surname" type="text" class="validate" required="" aria-required="true">
+            <label for="surname" data-error="wrong" data-success="right">Nombre y Apellido/s reales</label>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+          <div class="input-field col l12">
+            <input placeholder="Correo electrónico" id="email" type="text" class="validate" required="" aria-required="true">
+            <label for="email" data-error="wrong" data-success="right">Correo electrónico*</label>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="input-field col l12">
+            <input placeholder="Contraseña" id="pass" type="password" class="validate" required="" aria-required="true">
+            <label for="pass" data-error="wrong" data-success="right">Contraseña*</label>
+          </div>
+          <div class="input-field col l12">
+            <input placeholder="Confirmar contraseña" id="pass2" type="password" class="validate" required="" aria-required="true">
+            <label for="pass2" data-error="wrong" data-success="right" aria-label="Confirmar">Confirmar contraseña*</label>
+          </div>
+        </div>
+
+
+
+
+
+          <div class="row">
+            <div class="col s2 offset-s2">
+              <label aria-label="opcion">
+                <input name="group1" type="radio" />
+                <span>Hombre</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label aria-label="opcion">
+                <input name="group1" type="radio" />
+                <span>Mujer</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input name="group1" type="radio" />
+                <span>Otre</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+
+
+    </form>
+
+
+
+
+  </div>
+
+
+
+
+
+  <div class="modal-footer">
+    <a href="#!" id="register_btn" class="modal-close waves-effect waves-green btn-flat">Registrarse</a>
+  </div>
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/inicio_popup.js"></script>
+    <% include partials/scripts.html %>
+  </body>
+</html>

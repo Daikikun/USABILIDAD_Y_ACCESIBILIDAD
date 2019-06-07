@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <% include partials/inner_head.html %>
+  </head>
+  <body>
+    <% include partials/navbar.html %>
+    <% include partials/board.html %>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col l12">
+                <div class="customcol">
+                  <h2><%= title %></h2>
+                  
+                  
+                  <center>
+                    <button type="submit" class="waves-effect waves-light btn modal-trigger" href="#modal1">Crear círculo</button>
+                  </center>
+                  <br>
+                  <br>
+                  <!-- //////////////////// -->
+                  <div class="containter" id="inner_circle">
+                    <center><img src="/img/cargando.gif"></center>
+                  </div>
+                  <!-- ////////////////// -->
+                  
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <div id="modal1" class="modal">
+        <div role="window" class="modal-content">
+          <h4>Crea tu círculo</h4>
+          <div class="row">
+            <div class="input-field col l12">
+              <input id="circle_avatar" class="input_circle_avatar" aria-live="polite" type="text" placeholder="Url externo"></input>
+              <label for="circle" data-error="wrong" data-success="right">Enlace imagen (.jpg, .png, .gif)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l12">
+              <input id="circle_name" class="input_circle_name" aria-live="polite" type="text" placeholder="Nombre del círculo"></input>
+              <label for="circle" data-error="wrong" data-success="right">Nombre del círculo</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" id="submit_circle" class="modal-close waves-effect waves-green btn-flat">Confirmar</a>
+          </div>
+        </div>
+      </div>
+    
+    
+    <% include partials/footer.html %>
+    <% include partials/scripts.html %>
+  </body>
+</html>
